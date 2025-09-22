@@ -11,13 +11,17 @@ def sums(arr1):
     for n in range(l):
         s=s+arr1[n]
     return l,s
-
+def predict(arra1):
+    a=difs(arra1)
+    c,b=sums(a)
+    d=vdif(float(b),float(c))
+    e=int(arra1[len(arra1)-1]+d)
+    return e
 print("\033c\033[43;30m\n")
 nps=[]
 nps=[1,2,3,4,5,6,7,8,9]
 
 print(nps)
 d=difs(nps)
-print(" "+str(d))
-l,n=sums(d)
-print(vdif(n,l))
+rets=nps+[predict(nps)]
+print(rets)
