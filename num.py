@@ -1,3 +1,5 @@
+def vdif(a,b):
+    return a/b
 def difs(arra1):
     difint=[]
     for n in range(0,len(nps)-1):
@@ -18,4 +20,4 @@ print(nps)
 d=difs(nps)
 print(" "+str(d))
 l,n=sums(d)
-print(n/l)
+print(vdif(n,l))
