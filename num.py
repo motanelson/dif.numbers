@@ -7,7 +7,7 @@ def sums(arr1):
     l=len(arr1)
     s:float=0
     for n in range(l):
-        s=s+arr1[1]
+        s=s+arr1[n]
     return l,s
 
 print("\033c\033[43;30m\n")
