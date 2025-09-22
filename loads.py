@@ -1,5 +1,5 @@
 
-def saves(names):
+def loads(names):
     nps=[]
     f1=open(names,"r")
     s=f1.read()
@@ -9,6 +9,6 @@ def saves(names):
         nps=nps+[int(n.strip())]
     return nps  
 print("\033c\033[43;30m\n")
-nps=saves("data.txt")
+nps=loads("data.txt")
 nps.sort()
 print(nps)
